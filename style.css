@@ -416,12 +416,14 @@ body {
 }
 .contact-icons {
     display: flex;
+    margin-top: 40px;
+    width: 320px;
+    justify-content: space-between;
 }
 .contact-icons .circle {
     width: 65px;
     height: 65px;
     background-color: white;
-    margin: 40px 20px;
 }
 .contact-icons .circle:hover {
     cursor: pointer;
@@ -725,10 +727,13 @@ footer {
     .contact-content .medium-description {
         max-width: 325px;
     }
+    .contact-icons {
+        width: 230px;
+        margin: 10px 0;
+    }
     .contact-icons .circle {
         width: 50px;
         height: 50px;
-        margin: 10px 5px 0px;
     }
     footer {
         padding-top: 10px;
