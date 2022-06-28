@@ -71,6 +71,7 @@ body {
     outline: none;
     border: none;
     margin-top: 25px;
+    font-family: "Avenir Next Cyr";
 }
 .blue-button:hover {
     cursor: pointer;
@@ -172,10 +173,12 @@ body {
 .why .illustration:first-child {
     top: 10px;
     left: -140px;
+    z-index: -1;
 }
 .why .illustration:nth-child(2) {
     top: 410px;
     left: -280px;
+    z-index: -1;
 }
 .why .medium-title {
     margin-bottom: 40px;
