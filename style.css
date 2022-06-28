@@ -539,27 +539,32 @@ footer {
         font-size: 20px;
         line-height: 112%;
     }
+    .main-content-block {
+        width: 100%;
+    }
     .main-content-image,
     .desktop {
         display: none;
     }
     .main-content {
         margin-top: 80px;
+        width: 100%;
     }
     .main-content-mobile-img {
-        position: absolute;
+        position: relative;
         left: -40px;
-        top: 60px;
+
     }
     .main-content-block .big-title {
-        width: 236px;
+        width: 276px;
     }
     .main-content-block .medium-description {
-        width: 355px;
-        margin: 450px 0 0 0;
+        width: 100%;
+        margin: 25px 0 0 0;
     }
     .main-content-block .blue-button {
         margin-top: 20px;
+        float: right;
     }
     .blue-button {
         width: 216px;
@@ -578,6 +583,10 @@ footer {
     .why-content-list span img {
         margin: 6px;
         width: 40px;
+    }
+    .why-content .medium-description {
+        width: 100%;
+        margin: 0 0 20px 0;
     }
     .why .circled-div {
         max-width: 374px;
@@ -638,7 +647,10 @@ footer {
         margin-right: 10px;
     }
     .approach1-content-list-item.mobile .small-description {
-        width: 294px;
+        width:100%;
+    }
+    .approach1-content-list-item.mobile {
+        width: 100%;
     }
     .approach1-content-list-item.mobile .small-title {
         margin: 10px 0;
@@ -671,7 +683,7 @@ footer {
         flex-direction: column;
     }
     .approach3 .big-title {
-        width: 370px;
+        width: 100%;
     }
     .approach3 .medium-title {
         margin: 40px 0 20px 0;
@@ -681,13 +693,15 @@ footer {
     }
     .approach3-content-description {
         margin: 0px;
+        width: 100%;
     }
     .approach3-content-description .medium-description,
     .approach3-content-list-item {
         margin: 10px 0;
+        width: 100%;
     }
     .approach3-content-list-item .small-description {
-        width: 295px;
+        width: 100%;
     }
     .approach3-content-list-item .small-title {
         margin: 0 0 10px 0;
@@ -773,7 +787,34 @@ footer {
 .tools-item {
     margin: 5px;
 }
-
+.contact-content .medium-description {
+    font-size: 18px;
+    max-width: 300px;
+}
+.approach1-content-circles .circle.big-circle {
+    width: 353px;
+    height: 353px;
+    font-size: 16px;
+}
+.approach1-content-circles .circle.medium-circle {
+    width: 129px;
+    height: 129px;
+    font-size: 16px;
+}
+.approach1-content-circles .circle.small-circle {
+    width: 192px;
+    height: 192px;
+    font-size: 16px;
+}
+.why .circled-div p {
+    font-size: 18px;
+}
+.big-title {
+    font-size: 24px;
+}
+.medium-title {
+    font-size: 22px;
+}
 }
 .modal {
     display: none; /* Hidden by default */
