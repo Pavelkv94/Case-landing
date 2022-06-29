@@ -127,11 +127,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-@media screen and (min-width: 1200px) {
-    .main {
-        height: 100vh;
-    }
-}
+
 .main header {
     width: 100%;
     padding-top: 10px;
@@ -509,6 +505,14 @@ footer {
     }
 }
 @media screen and (max-width: 640px) {
+    .main-content-title-wrapper {
+        position: relative;
+        height: 57px;
+    }
+    .main-content-title-wrapper .big-title {
+        position: absolute;
+        bottom: -30px;
+    }
     .big-title {
         font-style: normal;
         font-weight: 700;
@@ -553,7 +557,6 @@ footer {
     .main-content-mobile-img {
         position: relative;
         left: -40px;
-
     }
     .main-content-block .big-title {
         width: 276px;
@@ -581,7 +584,7 @@ footer {
         margin: 40px 0 20px 0;
     }
     .why-content-list span img {
-        margin: 6px;
+        margin: 6px 6px 6px 0;
         width: 40px;
     }
     .why-content .medium-description {
@@ -600,6 +603,7 @@ footer {
         font-size: 22px;
         line-height: 112%;
         width: 316px;
+        text-align: center;
     }
     .approach1 .medium-title {
         margin: 0 0 20px 0;
@@ -625,6 +629,7 @@ footer {
         font-weight: 600;
         font-size: 20px;
         line-height: 112%;
+        right: -6px;
     }
     .approach1-content-circles .circle.small-circle {
         width: 212px;
@@ -637,23 +642,24 @@ footer {
         right: -20px;
     }
     .approach1-content-circles .medium-circle p {
-        margin: 0 0 10px 60px;
+        margin: 0 0 10px 50px;
     }
     .approach1-content-list-item.mobile {
         display: flex;
-        margin-top: 10px;
+        margin-top: 20px;
+        align-items: center;
     }
     .approach1-content-list-item.mobile img {
         margin-right: 10px;
     }
     .approach1-content-list-item.mobile .small-description {
-        width:100%;
+        width: 100%;
     }
     .approach1-content-list-item.mobile {
         width: 100%;
     }
     .approach1-content-list-item.mobile .small-title {
-        margin: 10px 0;
+        margin: 0 0 10px 0;
         padding: 0px;
     }
     .approach2 .medium-title {
@@ -781,40 +787,40 @@ footer {
 }
 
 @media screen and (max-width: 412px) {
-    .why .circled-div p{
+    .why .circled-div p {
         width: 270px;
     }
-.tools-item {
-    margin: 5px;
-}
-.contact-content .medium-description {
-    font-size: 18px;
-    max-width: 300px;
-}
-.approach1-content-circles .circle.big-circle {
-    width: 353px;
-    height: 353px;
-    font-size: 16px;
-}
-.approach1-content-circles .circle.medium-circle {
-    width: 129px;
-    height: 129px;
-    font-size: 16px;
-}
-.approach1-content-circles .circle.small-circle {
-    width: 192px;
-    height: 192px;
-    font-size: 16px;
-}
-.why .circled-div p {
-    font-size: 18px;
-}
-.big-title {
-    font-size: 24px;
-}
-.medium-title {
-    font-size: 22px;
-}
+    .tools-item {
+        margin: 5px;
+    }
+    .contact-content .medium-description {
+        font-size: 18px;
+        max-width: 300px;
+    }
+    .approach1-content-circles .circle.big-circle {
+        width: 353px;
+        height: 353px;
+        font-size: 16px;
+    }
+    .approach1-content-circles .circle.medium-circle {
+        width: 129px;
+        height: 129px;
+        font-size: 16px;
+    }
+    .approach1-content-circles .circle.small-circle {
+        width: 192px;
+        height: 192px;
+        font-size: 16px;
+    }
+    .why .circled-div p {
+        font-size: 18px;
+    }
+    .big-title {
+        font-size: 24px;
+    }
+    .medium-title {
+        font-size: 22px;
+    }
 }
 .modal {
     display: none; /* Hidden by default */
@@ -849,8 +855,8 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-   .modal {
-       width: 100%; /* Full width */
+    .modal {
+        width: 100%; /* Full width */
     }
 }
 
