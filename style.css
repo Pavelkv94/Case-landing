@@ -202,6 +202,8 @@ body {
 }
 .why-content-list span .small-description {
     margin-left: 10px;
+    margin-bottom: 20px;
+    align-self: flex-end;
 }
 .why .circled-div {
     height: 132px;
@@ -492,6 +494,13 @@ footer {
 .copyright p {
     margin: 14px 0 20px 0;
 }
+.copyright a {
+    text-decoration: none;
+    color: white;
+}
+.copyright a:hover {
+    text-decoration: underline;
+}
 
 @media screen and (min-width: 640px) {
     .main-content-mobile-img,
@@ -591,6 +600,10 @@ footer {
         width: 100%;
         margin: 0 0 20px 0;
     }
+    .why-content-list span .small-description {
+        margin-bottom: 0;
+        align-self: center;
+    }
     .why .circled-div {
         max-width: 374px;
         height: 66px;
@@ -680,6 +693,10 @@ footer {
         width: 36px;
         height: 36px;
     }
+    .approach2-content-list-item:nth-child(4) img {
+        width: 18px;
+        height: 36px;
+    }
     .approach2-content-list .blue-button {
         align-self: center;
         margin-top: 20px;
@@ -711,9 +728,11 @@ footer {
     }
     .approach3-content-list-item .small-title {
         margin: 0 0 10px 0;
+        padding: 0;
     }
     .approach3-content-list-item {
         display: flex;
+        align-items: center;
     }
     .approach3-content-list-item img {
         margin-right: 10px;
